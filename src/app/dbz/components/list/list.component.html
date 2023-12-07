@@ -1,0 +1,36 @@
+
+<br>
+<br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Razón Social</th>
+      <th scope="col">Nro Documento</th>
+      <th scope="col">Tipo Documento</th>
+      <th scope="col">Tipo Cliente</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Direccion</th>
+ 
+  
+
+    </tr>
+  </thead>
+  <tbody *ngFor="let elemento of ListaClientesx;let i = index ">
+    <tr>
+      <th scope="row">{{i+1}}</th>
+      <td>{{ elemento.clivNombres }}</td>
+      <td>{{ elemento.clivApelldos }}</td>
+      <td>{{ elemento.clivRazonsocial }}</td>
+      <td>{{ elemento.clivNrodoc }}</td>
+      <td>{{ elemento.cliiTipodoc }}</td>
+      <td>{{ elemento.cliiTipocli }}</td>
+      <td>{{ elemento.clivTelefono }}</td>
+      <td>{{ elemento.clivDireccion }}</td>
+    </tr>
+    <tr>
+   
+  </tbody>
+</table>
